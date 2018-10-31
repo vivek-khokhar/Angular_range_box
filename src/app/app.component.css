@@ -1,0 +1,71 @@
+/* 
+  #element {
+        overflow: hidden;
+        position:absolute;                  
+        bottom:0;                           
+        left:0;    
+        background: green;
+        height: 20px;
+        width: 20px;
+        opacity: 0.3;
+        transition: all .075s linear;
+   }
+
+   .resizer {
+        width : 20px;
+        height : 20px;
+        background : red;
+        position : absolute;
+        right : 0;
+        top : 0;
+        cursor : ne-resize;
+     }
+
+     .box {
+        position: relative;
+        float:left;
+        overflow: hidden;
+        height: 500px;
+        width: 500px;
+        border: 2px solid;
+      } */
+
+      .rectangle {
+        overflow: hidden;
+            position:absolute;                  /* added */
+            bottom:0;                           /* added */
+            left:0;    
+            background: rgb(100, 99, 99);
+            height: 20px;
+            width: 20px;
+            transition: all .075s linear;
+      }
+      .resize-handle {
+            width : 20px;
+            height : 20px;
+            background : black;
+            position : absolute;
+            right : 0;
+            top : 0;
+            cursor : ne-resize;
+      }
+    
+      .box {
+        position: relative;
+        float:left;
+        background-color: rgb(243, 236, 236);
+        overflow: hidden;
+        height: 500px;
+        width: 500px;
+        border: 0px solid black;
+      }
+
+      .spanBottom {
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+      }
+    
+      mwlResizable {
+        box-sizing: border-box;
+      }
